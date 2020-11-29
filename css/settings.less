@@ -1,0 +1,122 @@
+//global site settings
+// (generally you can leave these alone)
+//-------------------------------------//
+@base:					16em;
+
+//layouts
+@layout_widescreen:		87.5em;//1400
+@layout_desktop:		75em;//1200
+@layout_tablet:			56.25em;//900
+@layout_mobile:			30em;//480
+
+
+
+//template settings
+//-------------------------------------//
+
+//key colour (backgrounds)
+@c_key:					#005AA4;
+@c_key_light:			lighten(@c_key, 20%);
+@c_key_dark:			darken(@c_key,10%);
+
+//hint colour (sections menu)
+@c_hint:				#95AB00;
+@c_hint_light:			lighten(@c_hint,6%);
+@c_hint_dark:			darken(@c_hint,6%);
+
+//grey colour (outlines, etc)
+@c_grey:				#CCCCCC;
+@c_grey_light:			lighten(@c_grey,17%);
+@c_grey_dark:			darken(@c_grey,40%);
+
+
+//backgrounds
+@bg_body:				@c_key url('_images/body-background.png') repeat;
+
+//logo
+@logo_url:				'../logo.svg';
+@logo_width:			57;
+@logo_height:			80;
+
+//font settings
+//-------------------------------------//
+
+@font_fallback:			"sans-serif"; //what happens if the font doesn't load?
+
+@font_body:				"Myriad Regular";
+@font_bold:				"Myriad Bold";
+@font_italic:			"Myriad Italic";
+@font_bold_italic:		"Myriad Bold Italic";
+
+
+
+//firefly core settings
+//-------------------------------------//
+
+@ff_width_wide:							800;
+@ff_width_medium:						400;
+@ff_width_small:						280;
+@ff_width_text:							670;
+
+//note that background vars are always decalired as "background:" 
+//so could contain images if required.
+
+//default spacing of items
+@ff_space_vertical:								22;
+
+//general settings
+@ff_c_text:										black;
+@ff_c_text_light:								fade(black,45%);
+
+//border and bg combos — usually used together:
+//light
+@ff_c_border:									@c_grey;
+@ff_c_background:								@c_grey_light;
+//dark
+@ff_c_border_dark:								@c_hint_light;
+@ff_c_background_dark:							lighten(@c_hint_light,50%);
+//header
+@ff_c_header_background:						@c_hint;
+@ff_c_header_text:								white;
+
+
+//button styles
+@ff_c_button_background_light:					white;
+@ff_c_button_text_light:						@c_hint;
+@ff_c_button_background_dark:					@c_hint;
+@ff_c_button_text_dark:							white;
+
+
+//label styles (generally you wont need to alter these)
+@ff_c_label_warning:							#E5002B;
+@ff_c_label_new:								#95AD01;
+@ff_c_label_notice:								#999999;
+
+@ff_c_label_background:							white;
+
+@ff_c_label_grey:								#999999;
+@ff_c_label_red:								#D35447;
+@ff_c_label_blue:								#2B97CE;
+@ff_c_label_yellow:								#FFCD00;
+@ff_c_label_green:								#98CE1E;
+@ff_c_label_orange:								#FF9A00;
+@ff_c_label_pink:								#FF97CC;
+@ff_c_label_purple:								#9A63CE;
+
+//tables
+//to turn off border set them to "transparent"
+@ff_c_table_border_outer:						1px solid #333333;
+@ff_c_table_border_inner:						1px solid #CCCCCC;
+@ff_c_table_border_footer:						2px solid #333333;
+@ff_c_table_background_header:					#333333;
+@ff_c_table_text_header:						white;
+@ff_c_table_background_zebra:					#F7F7F7;
+
+//galleries
+@ff_c_gallery_background_caption:				#333333;
+@ff_c_gallery_text_caption:						white;
+
+//filelist
+@ff_c_filelist_background:						@c_grey_light;
+@ff_c_filelist_background_light:				lighten(@c_grey_light,1%);
+@ff_c_filelist_text_light:						fade(black,40%);

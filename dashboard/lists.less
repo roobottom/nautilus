@@ -1,0 +1,57 @@
+//general list of things styles:
+
+.ff-list, .ff-list-item {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+.ff-list.ff-level-0 .ff-list-heading {
+	display: block;
+	//border-top:1px solid @ff_c_border;
+	border-bottom: 1px solid @ff_c_border;
+	background: @ff_c_background;
+	padding: unit(@ff_space_vertical/4,px) unit(@ff_space_vertical/2,px); padding: unit(@ff_space_vertical/4/@base,rem) unit(@ff_space_vertical/2/@base,rem);
+	cursor: pointer;
+	clear: both;
+	
+	h3 {margin: 0;}
+	
+}
+
+.ff-list.ff-level-1 {
+	.clearfix();
+}
+
+.ff-list.ff-level-1 > .ff-list-item {
+	.clearfix();
+}
+
+//list of profiles
+.ff-list-of-profiles .ff-list.ff-level-1 {
+	padding: unit(@ff_space_vertical/2,px); padding: unit(@ff_space_vertical/2/@base,rem);
+}
+
+
+.ff-list-item.ff-profile {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	margin-bottom: unit(@ff_space_vertical/4,px); padding-bottom: unit(@ff_space_vertical/4/@base,rem);
+	
+	.ff-profile-content p {margin: 0;}
+	
+}
+
+
+//list of bookmarks
+.ff-list-of-bookmarks {
+	.ff-list.ff-level-1 > .ff-list-item a {
+		display: block;
+		padding: unit(@ff_space_vertical/2,px); padding: unit(@ff_space_vertical/2/@base,rem);
+		border-bottom: 1px dotted @ff_c_border;
+	}
+	.ff-list.ff-level-1 > .ff-list-item:last-child a {border-bottom: none;}
+}

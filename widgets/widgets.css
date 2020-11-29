@@ -1,0 +1,386 @@
+.ff-image {
+  position: relative;
+}
+.ff-image img {
+  max-width: 100%;
+  display: block;
+}
+.ff-image .ff-image-meta {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+.ff-image .ff-image-meta p {
+  padding: 7px 10px;
+  padding: 0.4375rem 0.625rem;
+  color: white;
+  margin: 0;
+}
+.ff-componentcontainer-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.ff-componentcontainer-row .ff-componentcontainer-item {
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  list-style: none;
+  margin-right: 11px;
+  margin-right: 0.6875rem;
+}
+.ff-componentcontainer-row .ff-componentcontainer-item:last-child {
+  margin-right: 0;
+}
+.ff-coverflow .ff-coverflow-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ff-coverflow .ff-coverflow-item {
+  float: left;
+  position: relative;
+}
+.ff-coverflow .ff-coverflow-item-first,
+.ff-coverflow .ff-coverflow-item-last {
+  width: 10%;
+}
+.ff-coverflow .ff-coverflow-item-previous,
+.ff-coverflow .ff-coverflow-item-next {
+  width: 25%;
+}
+.ff-coverflow .ff-coverflow-item-focused {
+  width: 30%;
+}
+.ff-coverflow .ff-coverflow-image {
+  max-width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.ff-slideshow {
+  overflow: hidden;
+}
+.ff-slideshow .ff-slideshow-slides,
+.ff-slideshow .ff-slideshow-links {
+  padding: 0;
+  margin: 0;
+}
+.ff-slideshow .ff-slideshow-slide,
+.ff-slideshow .ff-slideshow-link {
+  list-style: none;
+}
+.ff-slideshow .ff-slideshow-slides {
+  display: block;
+  text-align: center;
+  width: 400%;
+  position: relative;
+  zoom: 1;
+  background: #f7f7f7;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+.ff-slideshow .ff-slideshow-slides:after,
+.ff-slideshow .ff-slideshow-slides:before {
+  content: "";
+  display: table;
+}
+.ff-slideshow .ff-slideshow-slides:after {
+  clear: both;
+}
+.ff-slideshow .ff-slideshow-slide {
+  float: left;
+  width: 25%;
+  position: relative;
+}
+.ff-slideshow .ff-slideshow-image {
+  height: 400px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.ff-slideshow .ff-slideshow-slide-caption {
+  display: block;
+  opacity: 0;
+  background: #333333;
+  background: rgba(51, 51, 51, 0.8);
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.ff-slideshow .ff-slideshow-slide-caption p {
+  margin: auto;
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
+}
+.ff-slideshow .ff-slideshow-slide:hover .ff-slideshow-slide-caption {
+  opacity: 1;
+}
+.ff-slideshow .ff-slideshow-links {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  clear: both;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+.ff-slideshow .ff-slideshow-link {
+  display: block;
+}
+.ff-slideshow .ff-slideshow-link a {
+  display: block;
+}
+.ff-slideshow .ff-slideshow-linkimage {
+  height: 100px;
+  max-width: 100%;
+  margin-right: 10px;
+  margin-right: 0.625rem;
+  display: block;
+  float: left;
+}
+.ff-table {
+  width: 100%;
+  border: 1px solid #333333;
+}
+.ff-table th,
+.ff-table td {
+  padding: 6px;
+  padding: 0.375rem;
+  text-align: left;
+}
+.ff-table thead {
+  background: #333333;
+  color: #ffffff;
+}
+.ff-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+}
+.ff-table tfoot {
+  border-top: 2px solid #333333;
+}
+.ff-table.ff-table-2axis tbody th {
+  background: #f7f7f7;
+}
+.ff-table.ff-table-numerical th,
+.ff-table.ff-table-numerical td {
+  text-align: center;
+}
+.ff-table.ff-table-zebra tbody tr:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+.ff-newsfeed .ff-newsfeed-content {
+  padding: 0;
+  margin: 0;
+}
+.ff-newsfeed .ff-newsfeed-item {
+  list-style: none;
+}
+.ff-newsfeed .ff-newsfeed-content-meta .ff-newsfeed-content-meta-author,
+.ff-newsfeed .ff-newsfeed-content-meta .ff-newsfeed-content-meta-date {
+  display: inline;
+}
+.ff-newsfeed .ff-newsfeed-content-meta .ff-newsfeed-content-meta-date {
+  color: rgba(0, 0, 0, 0.45);
+}
+.ff-newsfeed .ff-newsfeed-content-body {
+  zoom: 1;
+}
+.ff-newsfeed .ff-newsfeed-content-body:after,
+.ff-newsfeed .ff-newsfeed-content-body:before {
+  content: "";
+  display: table;
+}
+.ff-newsfeed .ff-newsfeed-content-body:after {
+  clear: both;
+}
+.ff-newsfeed .ff-newsfeed-image {
+  max-width: 132px;
+  max-width: 8.25rem;
+  float: left;
+  margin: 22px;
+  margin: 1.375rem;
+  margin-left: 0;
+}
+.ff-newsfeed .ff-newsfeed-image img {
+  max-width: 100%;
+  display: block;
+}
+.ff-filelist {
+  padding: 0;
+  margin: 0;
+}
+.ff-filelist .ff-filelist-file {
+  list-style: none;
+  display: block;
+  margin-bottom: 1px;
+}
+.ff-filelist .ff-filelist-file a {
+  display: block;
+  padding: 11px;
+  padding: 0.6875rem;
+  background: #f7f7f7;
+}
+.ff-filelist .ff-filelist-file .ff-filelist-file-note {
+  display: block;
+  padding: 11px;
+  padding: 0.6875rem;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.4);
+}
+.ff-timetable {
+  overflow: hidden;
+}
+.ff-timetable ol,
+.ff-timetable ul,
+.ff-timetable li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ff-timetable .ff-timetable-index,
+.ff-timetable .ff-timetable-days,
+.ff-timetable .ff-timetable-dayswrapper,
+.ff-timetable .ff-timetable-day {
+  float: left;
+}
+.ff-timetable .ff-timetable-index {
+  width: 15%;
+  position: relative;
+}
+.ff-timetable .ff-timetable-index .ff-timetable-block:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #cccccc;
+  width: 3000%;
+  height: 1px;
+}
+.ff-timetable .ff-timetable-days {
+  width: 85%;
+  overflow-y: auto;
+}
+.ff-timetable .ff-timetable-days .ff-timetable-block {
+  overflow: hidden;
+}
+.ff-timetable .ff-timetable-dayswrapper {
+  min-width: 600px;
+  min-width: 37.5rem;
+  width: 100%;
+}
+.ff-timetable .ff-timetable-day {
+  width: 20%;
+}
+.ff-timetable.ff-timetable-fiveday .ff-timetable-day {
+  width: 20%;
+}
+.ff-timetable.ff-timetable-sixday .ff-timetable-day {
+  width: 16.666666666666668%;
+}
+.ff-timetable.ff-timetable-sevenday .ff-timetable-day {
+  width: 14.285714285714286%;
+}
+.ff-timetable .ff-timetable-blocks {
+  position: relative;
+}
+.ff-timetable .ff-timetable-block {
+  position: absolute;
+  width: 100%;
+}
+.ff-timetable .ff-timetable-event,
+.ff-timetable .ff-timetable-label,
+.ff-timetable .ff-timetable-title {
+  padding: 5px;
+  display: block;
+}
+.ff-timetable .ff-timetable-event {
+  height: 100%;
+  border-top: 1px solid red;
+  border-bottom: 3px solid green;
+}
+.ff-timetable .ff-timetable-title {
+  background: #7a8c00;
+  color: #ffffff;
+}
+.ff-timetable .ff-timetable-break {
+  background: rgba(204, 204, 204, 0.2);
+}
+.ff-component {
+  zoom: 1;
+}
+.ff-component:after,
+.ff-component:before {
+  content: "";
+  display: table;
+}
+.ff-component:after {
+  clear: both;
+}
+.ff-component-type-container,
+.ff-component-type-gallery,
+.ff-component-type-table,
+.ff-component-type-horizontalrule,
+.ff-component-type-image,
+.ff-component-type-newsfeed,
+.ff-component-type-filelist {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+.ff-component-caption {
+  text-align: center;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.ff-component-caption p {
+  margin: 7.333333333333333px 0;
+  margin: 0.4583333333333333rem 0;
+}
+.ff-width-wide {
+  width: 800px;
+  width: 50rem;
+  max-width: 100%;
+}
+.ff-width-medium {
+  width: 400px;
+  width: 25rem;
+  max-width: 100%;
+}
+.ff-width-small {
+  width: 280px;
+  width: 17.5rem;
+  max-width: 100%;
+}
+.ff-width-text {
+  width: 670px;
+  width: 41.875rem;
+  max-width: 100%;
+}
+.ff-component-floated-right {
+  float: right;
+  margin-left: 22px;
+  margin-left: 1.375rem;
+}
+.ff-component-floated-left {
+  float: left;
+  margin-right: 22px;
+  margin-right: 1.375rem;
+}

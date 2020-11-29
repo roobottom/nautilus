@@ -1,0 +1,64 @@
+//import settings from template
+@import '../css/settings.less';
+
+//mixins
+.list-reset() {
+
+	&, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.clearfix() {
+	*zoom: 1;
+	&:before,
+	&:after {
+		content: " "; 
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.round(@radius:5px) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius; 
+}
+
+//general bits (maybe move into their own files at some point?)
+.ff-image {
+	max-width: 100%;
+	border:1px solid @ff_c_border;
+	padding: 1px;
+	background-color: white;
+	.round(50%);
+}
+
+
+//dashboard bits
+@import 'fonts.less';
+@import 'layout.less';
+
+@import 'messages.less';
+@import 'labels.less';
+@import 'buttons.less';
+@import 'lists.less';
+
+//test overrides;
+
+/*
+.ff-dashboard-item {
+	.ff-dashbord-item-title {
+		background: red;
+		padding: 10px;
+	}
+	.ff-dashboard-item-content {
+		padding: 10px;
+		border: 1px solid red;
+	}
+}
+*/

@@ -1,0 +1,28 @@
+//layout for dashboard items
+.ff-dashboard-item {
+	margin-bottom: unit(@ff_space_vertical*2,px); margin-bottom: unit(@ff_space_vertical*2/@base,rem);
+	.ff-dashbord-item-title .ff-button {
+		float: right;
+	}
+}
+
+
+//layout for messages
+.ff-message-notice {
+	
+	.clearfix();
+	
+	.ff-message-actions, .ff-message-image {
+		float: right;
+		margin-left: 10px; margin-left: 10rem/@base;
+		margin-bottom: 10px; margin-bottom: 10rem/@base;
+	}
+	
+	.ff-message-actions .ff-button {
+		float: right; clear: right;
+		margin-bottom: 8px; margin-bottom: 8rem/@base;
+		
+		&:last-child {margin-bottom: 0;}
+	}
+	
+}

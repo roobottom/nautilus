@@ -1,0 +1,116 @@
+//varibales for this component
+//move these later on
+
+@ff_var_timetable_maxdaywidth:		600;
+
+@ff_c_timetable_header_background:	#7A8C00;
+@ff_c_timetable_header_text:		white;	
+
+@ff_c_timetable_border:				#cccccc;
+@ff_c_timetable_break_background:	fade(#cccccc,20%);		
+
+.ff-timetable {
+	//general resets
+	overflow:hidden;
+	
+	ol, ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	
+	//general layout
+	.ff-timetable-index,
+	.ff-timetable-days,
+	.ff-timetable-dayswrapper,
+	.ff-timetable-day {
+		float: left;
+	}
+	
+	.ff-timetable-index {
+		width: 15%;
+		position: relative;
+		
+		.ff-timetable-block:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			border-bottom: 1px solid @ff_c_timetable_border;
+			width: 3000%;
+			height: 1px;
+		}
+	}
+	
+	.ff-timetable-days {
+		width:85%;
+		overflow-y: auto;
+		
+		.ff-timetable-block {
+			overflow: hidden;
+		}
+	}
+	
+	.ff-timetable-dayswrapper {
+		min-width: unit(@ff_var_timetable_maxdaywidth,px);
+		min-width: unit((@ff_var_timetable_maxdaywidth/@base),rem);
+		width: 100%;
+	}
+	
+	//days layout
+	.ff-timetable-day {//default to 5 day
+		width: 100%/5;
+	}
+	
+	&.ff-timetable-fiveday .ff-timetable-day {
+		width: 100%/5;
+	}
+	&.ff-timetable-sixday .ff-timetable-day {
+		width: 100%/6;
+	}
+	&.ff-timetable-sevenday .ff-timetable-day {
+		width: 100%/7;
+	}
+	
+	//lesson blocks
+	.ff-timetable-blocks {
+		position: relative;
+	}
+	
+	.ff-timetable-block {
+		position: absolute;
+		width: 100%;
+	}
+	
+	.ff-timetable-double {
+		
+	}
+	
+	
+	//events
+	.ff-timetable-event,
+	.ff-timetable-label,
+	.ff-timetable-title {
+		padding: 5px;
+		display: block;
+		
+	}
+	
+	.ff-timetable-event {
+		height: 100%;
+		border-top:1px solid red;
+		border-bottom:3px solid green;
+	}
+	
+	.ff-timetable-title {
+		background: @ff_c_timetable_header_background;
+		color: @ff_c_timetable_header_text;
+	}
+	
+	.ff-timetable-break {
+		background: @ff_c_timetable_break_background;
+	}
+	
+	
+	
+	
+}

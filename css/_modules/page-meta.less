@@ -1,0 +1,46 @@
+#page-meta {
+	background: @c_grey_light;
+	padding: 16px;
+	border-top: 1px solid @c_grey;
+	clear: both;
+	
+	
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	li {
+		line-height: 1.7;
+		#icon > .li();
+		display: inline-block;
+		margin-right: 20px;
+		
+		&:before {
+			position: relative;
+			top:2px;
+			color: @c_grey;
+			margin-right: 6px;
+		}
+	}
+	
+	.ff-page-meta-last-updated-by {#icon>.user();}
+	.ff-page-meta-last-updated-on {#icon>.calendar();}
+	.ff-page-meta-page-information {#icon>.info();}
+	.ff-page-meta-check-visits-by-person {#icon>.stats();}
+	
+	a {
+		color: @c_key;
+	}
+}
+
+.tablet() {
+	#page-meta {
+		
+		li {
+			display: block;
+		}
+		
+	}
+}

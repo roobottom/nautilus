@@ -1,0 +1,160 @@
+#page-menu .ff-nav-pages-add button {
+	background-color: #525252;
+    background-image: linear-gradient(to bottom, #525252 0%, #040404 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #3D4145;
+    border-radius: 5px 5px 5px 5px;
+    line-height: 14px;
+    margin: 0;
+    padding: 10px 15px;
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-family: "Akko W01 Regular", Helvetica, Arial, sans-serif;
+    display: block;
+}
+#page-menu .ff-nav-pages-add button:before {
+	background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    bottom: 1px;
+    content: "";
+    display: block;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 2;
+}
+
+//font styles
+.user-content,
+.dashboard-content {
+	
+	
+	//general text styling
+	h1 {
+		font-size: 36px; font-size: 36rem/@base;
+		.font-bold();
+		line-height: 42/36;
+	}
+	.ff-global-title {margin-top: 0;}
+	
+	h2 {
+		font-size: 28px; font-size: 28rem/@base;
+		line-height: 32/28;
+		.font-bold();
+	}
+	
+	h3 {
+		font-size: 24px; font-size: 24rem/@base;
+		line-height: 32/24;
+		.font-bold();
+	}
+	
+	h4, h5, h6 {
+		.font-regular();
+	}
+	
+	p {
+		line-height: unit(24/@base);
+	}
+	
+	.ff-text-align-center {text-align: center;}
+	.ff-text-align-right {text-align: right;}
+	
+	a, a:link, a:visited {
+		color: @c_key;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @c_key;
+		text-decoration: underline;
+	}
+	
+	p.leading {
+		font-size: 20px; font-size: 20rem/@base;
+		line-height: 28/20;
+	}
+	
+	hr {
+		border:none;
+		border-bottom:1px solid @c_grey;
+	}
+	
+	blockquote {
+		> p {
+			font-size: 24px; font-size:24rem/@base;
+			line-height: 28/24;
+		}
+		cite {
+			.font-italic();
+		}
+	}
+	
+	
+	
+	//specific text styling for text components
+	.ff-component-type-text {
+		ul, ol {
+			margin: 22px 0; margin: 22rem/@base 0;
+			padding:0;
+		}
+		//anything but top level ul or ol shoudn't have any margin
+		ul ul, 
+		ol ol {
+			margin: 0;
+			padding-top:6px;padding-top:6rem/@base;
+			li {margin-left: 2em;}	
+		}
+
+		li {
+			list-style-position: outside;
+			padding-bottom: 6px;padding-bottom: 6rem/@base;
+			&:last-child {padding-bottom: 0;}
+		}
+		
+		
+		//numbered lists
+		ol ol li {
+			list-style-type: lower-roman;
+		}
+		ol ol ol li {
+			list-style-type: lower-alpha;
+		}
+		
+		//bullet lists
+		ul li {
+			list-style-type: square;
+		}
+		ul ul li {
+			list-style-type: disc;
+		}
+		ul ul ul li {
+			list-style-type: circle;
+		}
+		
+		
+		h1, h2, h3, h4, h5, h6, p {
+			margin: 22px 0; margin: 22rem/@base 0;
+			&:first-child {margin-top:0;}
+			
+		}
+		p,li {
+			max-width: unit(@ff_width_text,px);
+			max-width: unit(@ff_width_text/@base,rem);
+		}
+		blockquote {
+			margin-bottom: 22px; margin-bottom: 22rem/@base;
+			padding:16px 0; padding:16rem/@base 0;
+			border-bottom: 1px solid @c_grey;
+			border-top:1px solid @c_grey;
+		}
+	}
+	.ff-component-type-newsfeed {
+		p {
+			max-width: unit(@ff_width_text,px);
+			max-width: unit(@ff_width_text/@base,rem);
+		}
+	}
+}

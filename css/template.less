@@ -1,0 +1,48 @@
+//blue 2014//
+
+@import 'settings.less';
+
+//includes
+@import '_inc/normalise.less';
+@import '_inc/bootstrap.less';
+@import '_inc/fonts.less';
+@import '_inc/typography.less';
+
+//modules
+@import '_modules/section-menu.less';
+@import '_modules/page-menu.less';
+@import '_modules/school-header.less';
+@import '_modules/section-header.less';
+@import '_modules/breadcrumb.less';
+@import '_modules/firefly-footer.less';
+@import '_modules/page-meta.less';
+@import '_modules/footer.less';
+
+//layouts
+@import '_layouts/global-layout.less';
+@import '_layouts/singlecolumn.less';
+@import '_layouts/dashboard.less';
+
+//temp fixes for demo
+@import 'fudge.less';
+
+body {background: @bg_body;}
+
+//responsiveness
+.superwide() {}
+.widescreen(){}
+.desktop(){}
+.tablet(){}
+.mobile(){}
+
+/* mobile */
+@media screen and (max-width:@layout_mobile) {.mobile();}
+/* tablet */
+@media screen and (min-width:@layout_mobile) and (max-width:@layout_tablet) {.tablet();}
+/* desktop */
+@media screen and (min-width:@layout_tablet) and (max-width:@layout_desktop) {.desktop();}
+/* widescreen */
+@media screen and (min-width:@layout_desktop) and (max-width:@layout_widescreen) {.widescreen();}
+/* superwide */
+@media screen and (min-width:@layout_widescreen) {.superwide();}
+

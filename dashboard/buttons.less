@@ -1,0 +1,53 @@
+.ff-button {	
+	border:none;
+	font-size: 14px; font-size: 14rem/@base;
+	padding:11px 14px; padding:11rem/@base 14rem/@base;	
+}
+
+.ff-button-main-action {
+	background:@ff_c_button_background_dark;
+	color: @ff_c_button_text_dark;
+}
+
+.ff-button-message-action {
+	background: @ff_c_button_background_light;
+	color: @ff_c_button_text_light;
+	border:1px solid @ff_c_button_text_light;
+}
+.ff-button-archive {padding:5px 7px; padding:5rem/@base 7rem/@base;	}
+.ff-button-archive:before {margin-right: 0;}
+.ff-button-archive span {display: none}
+
+//dropdown option buttons
+.ff-button.ff-has-children {
+
+	position: relative;
+	
+	&:after {
+		content: ">";
+		padding-left: 7px; padding-left: 7rem/@base;
+		margin-left: 7px; margin-left: 7rem/@base;
+		border-left: 1px solid;
+	}
+	
+	.ff-children {
+		display: none;
+		border: 1px solid @ff_c_button_text_light;
+		background: @ff_c_button_background_light;
+		position: absolute;
+		z-index: 100;
+		top:100%;
+		left: -1px;
+		width: 100%;
+		text-align: left;
+	}
+	
+	&.ff-show-children .ff-children {
+		display: block;
+	}
+	
+	//specific overrides
+	.ff-children .ff-label-color a {
+		padding: 10px;
+	}
+}

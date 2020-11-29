@@ -1,0 +1,79 @@
+//import settings from template
+@import '../css/settings.less';
+
+@import '../ff-bootstrap.less';
+@import 'image.less';
+@import 'componentcontainer.less';
+@import 'gallery.coverflow.less';
+@import 'gallery.slideshow.less';
+@import 'table.less';
+@import 'newsfeed.less';
+@import 'filelist.less';
+@import 'timetable.less';
+
+
+
+.ff-component {
+	.clearfix();
+	//debug style
+	//outline:1px dotted fade(red,30%);
+}
+
+//vertical spacing of components
+.ff-component-type-container,
+.ff-component-type-gallery,
+.ff-component-type-table,
+.ff-component-type-horizontalrule,
+.ff-component-type-image,
+.ff-component-type-newsfeed,
+.ff-component-type-filelist {
+	margin-bottom: unit(@ff_space_vertical,px);
+	margin-bottom: unit(@ff_space_vertical/@base,rem);
+}
+
+
+
+.ff-component-caption {
+	text-align: center;
+	color: @ff_c_border;
+	border-bottom: 1px solid @ff_c_border;
+	font-size: 14px;
+	font-size:14rem/@base;
+	
+	p {
+		margin: unit(@ff_space_vertical/3,px) 0;
+		margin: unit(@ff_space_vertical/@base/3,rem) 0;
+	}
+	
+}
+
+//general helper classes
+.ff-width-wide {
+	width:unit(@ff_width_wide,px);
+	width:unit(@ff_width_wide/@base,rem);
+	max-width: 100%;
+}
+.ff-width-medium {
+	width:unit(@ff_width_medium,px);
+	width:unit(@ff_width_medium/@base,rem);
+	max-width: 100%;
+}
+.ff-width-small {
+	width:unit(@ff_width_small,px);
+	width:unit(@ff_width_small/@base,rem);
+	max-width: 100%;
+}
+.ff-width-text {
+	width:unit(@ff_width_text,px);
+	width:unit(@ff_width_text/@base,rem);
+	max-width: 100%;
+}
+
+.ff-component-floated-right {
+	float: right;
+	margin-left: unit(@ff_space_vertical,px); margin-left: unit(@ff_space_vertical/@base,rem);
+}
+.ff-component-floated-left {
+	float: left;
+	margin-right: unit(@ff_space_vertical,px); margin-right: unit(@ff_space_vertical/@base,rem);
+}

@@ -1,0 +1,58 @@
+.ff-label {
+	padding: 2px 6px; padding: 2rem/@base 6rem/@base;
+	border:1px solid;
+	background: @ff_c_label_background;
+	.round();
+	
+	&.ff-label-notice {
+		color: @ff_c_label_notice;
+		border-color: @ff_c_label_notice;
+	}
+	&.ff-label-new {
+		color: @ff_c_label_new;
+		border-color: @ff_c_label_new;
+	}
+	&.ff-label-warning {
+		color: @ff_c_label_warning;
+		border-color: @ff_c_label_warning;
+	}
+}
+.ff-labels-color {
+	
+	margin: 0;
+	padding:0;
+	
+	.ff-label-color {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		a {
+			display: block;
+		}
+		
+		a:before {
+			content: "";
+			display: inline-block;
+			.round(50%);
+			width:16px;
+			height: 16px;
+			margin-right: 6px;
+			position: relative;
+			top:3px;
+		}
+		
+		
+		//colours
+		&.ff-label-color-grey a:before {background: @ff_c_label_grey;}
+		&.ff-label-color-red a:before {background: @ff_c_label_red;}
+		&.ff-label-color-blue a:before {background: @ff_c_label_blue;}
+		&.ff-label-color-yellow a:before {background: @ff_c_label_yellow;}
+		&.ff-label-color-green a:before {background: @ff_c_label_green;}
+		&.ff-label-color-orange a:before {background: @ff_c_label_orange;}
+		&.ff-label-color-pink a:before {background: @ff_c_label_pink;}
+		&.ff-label-color-purple a:before {background: @ff_c_label_purple;}
+		&.ff-label-color-empty a:before {border:1px solid @ff_c_label_grey;}
+	}
+	
+}

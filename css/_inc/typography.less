@@ -1,0 +1,30 @@
+.font-regular() {
+	font-family: @font_body,@font_fallback;
+	font-style: normal;
+	font-weight: 400;
+}
+.font-bold() {
+	font-family: @font_bold,@font_fallback;
+	font-style: normal;
+	font-weight: 400;
+}
+.font-italic() {
+	font-family: @font_italic,@font_fallback;
+	font-style: normal;
+	font-weight: 400;
+}
+.font-bold-italic() {
+	font-family: @font_bold_italic,@font_fallback;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {.font-regular()}
+strong, b {.font-bold();}
+em {.font-italic()}
+strong em, strong i,
+b em, b em,
+em strong, em b,
+i strong, i b {
+	.font-bold-italic()
+}

@@ -1,0 +1,52 @@
+body {
+	font-family: "Akko W01 Regular", Helvetica, Arial, sans-serif;
+}
+h1 {
+	background-color: #525252;
+    background-image: linear-gradient(to bottom, #525252 0%, #040404 100%);
+    background-repeat: repeat-x;
+    font-weight: normal;
+    text-shadow: none;
+}
+#container {
+	background: white;
+}
+
+button.okbutton {
+	background-image: linear-gradient(to bottom, #2989DA 0%, #0466B9 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #034E8D;
+    border-radius: 5px 5px 5px 5px;
+    bottom: 0;
+    left: 0;
+    line-height: 14px;
+    margin: 0;
+    padding: 7px 10px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    color: white;
+    font-weight: normal;
+    margin-right: 20px;
+    position: relative;
+}
+   
+button.okbutton img {display: none;}
+
+button.okbutton:before {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    bottom: 1px;
+    content: "";
+    display: block;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 2;
+}
+
+ul.dyntabnav, #tabs {
+	background-image: none;
+	border-bottom: 1px solid #ccc;
+}

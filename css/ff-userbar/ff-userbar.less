@@ -1,0 +1,315 @@
+/* Firely 5 ff-userbar styles */
+/* Version 1.1 — November 2013 */
+
+/*
+
+Changelog:
+
+v1.1 — November 2013.
+* addding further styles for mobile sizes
+
+v1.0 — October 2013. 
+* Inital styles for usergroup
+
+*/
+
+@ff-ub-background: #333;
+@ff-ub-textcolor: #FFF;
+
+@ff-ub-base: 16em;
+@ff-ub-maxwidth: 87.5em; //1400px
+@ff-ub-tablet-breakpoint: 56.25em; //900px
+@ff-ub-mobile-breakpoint: 48.75em; //780px
+@ff-ub-sm-mobile-breakpoint: 36.25em; //580px
+
+.ff-ub-clearfix() {
+	*zoom: 1;
+	 &:before, &:after {
+		content: " "; 
+		display: table; 
+	 }
+	 &:after {clear: both;}
+}
+
+//reset
+.ff-userbar {
+	margin: 0; padding: 0;
+	line-height: 1;
+	font-size: 1em;
+}
+
+//Full width styles
+.ff-userbar {
+	background-color: @ff-ub-background;
+	color: @ff-ub-textcolor;
+	text-shadow: 0 1px 0 #000;
+	.ff-ub-clearfix();
+	 
+	 //general styling
+	 a {
+		 color: @ff-ub-textcolor;
+		 text-decoration: none;
+		 display: block;
+		 padding: 14px; padding: 14rem/@ff-ub-base;
+	}
+	ul,
+	li {
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	//icons
+	.ff-ub-dashboards > a,
+	.ff-ub-dashboard > a,
+	.ff-ub-manage-set-tasks > a,
+	.ff-ub-your-tasks > a,
+	.ff-ub-bookmarks > a,
+	.ff-ub-has-children > a,
+	.ff-ub-title {
+		&:before,
+		&:after {
+			font-family: 'userbar';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+		
+			position: relative;
+			top:2px; top:2rem/@ff-ub-base;
+			margin-right: 6px; margin-right: 6rem/@ff-ub-base;
+
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}	
+	}
+	.ff-ub-level-0 > .ff-ub-dashboards > a:before,
+	.ff-ub-level-0 > .ff-ub-dashboard > a:before {
+		content: "\e601";
+	}
+	.ff-ub-manage-set-tasks > a:before {
+		content: "\e602";
+	}
+	.ff-ub-your-tasks > a:before {
+		content: "\e600";
+	}
+	.ff-ub-bookmarks > a:before {
+		content: "\e603";
+	}
+	.ff-ub-has-children > a:after {
+		content: "\e604";
+		text-align: right;
+		margin-left: 6px; margin-left: 6rem/@ff-ub-base;
+		margin-right: 0;
+	}
+	.ff-ub-title:before {
+		content: "\e605";
+	}
+	
+	.ff-ub-username {
+		position: relative;
+		> a {padding-left: 50px; padding-left: 50rem/@ff-ub-base;}
+		img {
+			display: block;
+			position: absolute;
+			width: 32px; width: 32rem/@ff-ub-base;
+			left: 10px; left:10rem/@ff-ub-base;
+			top:6px; top:6rem/@ff-ub-base;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+		}
+	}
+	.ff-ub-has-children {
+		position: relative;
+		
+		> ul {
+			position: absolute;
+			display: none;
+			background: white;
+			width:100%;
+			z-index: 1000;
+			@shadow: 0 2px 1px fade(black,60%);
+			-webkit-box-shadow: @shadow;
+			-moz-box-shadow: @shadow;
+			box-shadow: @shadow;
+			
+			a {
+				color: black;
+				text-shadow: none;
+				border-top:1px solid #E3E3E3;
+			}
+			a:hover {
+				background-color: #F1F1F1;
+			}
+			
+		}
+		
+	}
+	
+	.ff-ub-level-0 > li {
+		float: left;
+	}
+	
+	.ff-ub-has-children.ff-ub-show-children {
+		> a {
+			background: white;
+			color: black;
+			text-shadow: none;
+		}
+		> ul {
+			display: block;
+		}
+	}
+		
+}//ff-userbar
+
+
+
+//deskuop
+.ff-ub-desktop() {
+	.ff-userbar {
+		padding: 0 7px; padding: 0 7rem/@ff-ub-base;
+		.ff-ub-wrapper {
+			max-width: @ff-ub-maxwidth;
+			margin: 0 auto;
+			position: relative;
+		}
+		.ff-ub-title {
+			float: left;
+			padding: 14px; padding: 14rem/@ff-ub-base;
+		}
+		
+		.ff-ub-nav {
+			float: right;
+		}
+		
+		
+		.ff-ub-title span {display: none;}
+		
+		
+	}
+}
+
+//tablet
+.ff-ub-tablet() {
+	.ff-userbar {
+		.ff-ub-title {display: none;}
+		
+	}
+}
+
+//mobile
+.ff-ub-mobile() {
+	.ff-userbar {
+		.ff-ub-title {display: none;}
+		
+		.ff-ub-level-0 {
+			.ff-ub-clearfix();
+		
+			.ff-ub-dashboards,
+			.ff-ub-manage-set-tasks,
+			.ff-ub-your-tasks,
+			.ff-ub-bookmarks,
+			.ff-ub-username {
+				text-align: center;
+				float: left;
+				width: 20%;
+				position: relative;
+				
+				> a {
+					padding:7px;
+				}
+				
+				> a:before {
+					display: block;
+					font-size: 24px; font-size: 24rem/@ff-ub-base;
+					margin-bottom: 3px; margin-bottom: 3rem/@ff-ub-base;
+				}
+				> a:after {
+					position: absolute;
+					top:50%;
+					margin-top:-14/2px; margin-top:-14/2rem/@ff-ub-base;
+					right: 10px; right: 10rem/@ff-ub-base;
+				}
+				img {
+					position: relative;
+					width:24px; width: 24rem/@ff-ub-base;
+					left: 50%;
+					margin-left: -24/2px; margin-left: -24/2rem/@ff-ub-base;
+					top:0; 
+				}
+				.ff-ub-username-text {
+					top: 3px; top: 3rem/@ff-ub-base;
+					position: relative;
+				}
+				
+			}
+		
+		}//level-0
+		
+	}
+}
+
+//small mobile
+.ff-ub-sm-mobile() {
+	.ff-userbar {
+		.ff-ub-title {display: none;}
+		
+		.ff-ub-level-0 {
+			.ff-ub-clearfix();
+		
+			.ff-ub-dashboards,
+			.ff-ub-manage-set-tasks,
+			.ff-ub-your-tasks,
+			.ff-ub-bookmarks,
+			.ff-ub-username {
+				text-align: center;
+				float: left;
+				width: 50%;
+				position: relative;
+				
+				
+
+			}
+			.ff-ub-username {
+					clear: left;
+					width: 100%;
+					> a {
+					background-color: darken(@ff-ub-background, 3%);
+					}
+				}
+		
+		}//level-0
+		
+	}
+
+}
+
+/* small mobile */
+@media screen and (max-width:@ff-ub-sm-mobile-breakpoint) {.ff-ub-sm-mobile();}
+/* mobile */
+@media screen and (min-width:@ff-ub-sm-mobile-breakpoint) and (max-width:@ff-ub-mobile-breakpoint) {.ff-ub-mobile();}
+/* tablet */
+@media screen and (min-width:@ff-ub-mobile-breakpoint) and (max-width:@ff-ub-tablet-breakpoint) {.ff-ub-tablet();}
+/* desktop */
+@media screen and (min-width:@ff-ub-tablet-breakpoint){.ff-ub-desktop();}
+
+
+
+
+//load icon font
+@font-face {
+	font-family: 'userbar';
+	src:url('userbar.eot');
+	src:url('userbar.eot?#iefix') format('embedded-opentype'),
+		url('userbar.ttf') format('truetype'),
+		url('userbar.woff') format('woff'),
+		url('userbar.svg#userbar') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

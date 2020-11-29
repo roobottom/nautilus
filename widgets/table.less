@@ -1,0 +1,42 @@
+.ff-table {
+	width:100%;
+	border:@ff_c_table_border_outer;
+	
+	th, td {
+		padding: 6px; padding:6rem/@base;
+		text-align: left;
+	}
+	
+	thead {
+		background: @ff_c_table_background_header;
+		color: @ff_c_table_text_header;
+	}
+	
+	tbody {
+		tr:not(:last-child) {
+			border-bottom: @ff_c_table_border_inner;
+		}
+	}
+	
+	tfoot {
+		border-top: @ff_c_table_border_footer;
+	}
+	
+	&.ff-table-2axis {
+		tbody th {
+			background: @ff_c_table_background_zebra
+		}
+	}
+	
+	&.ff-table-numerical {
+		th, td {
+			text-align: center;
+		}
+	}
+	
+	&.ff-table-zebra {
+		tbody tr:nth-of-type(odd) {
+			background:@ff_c_table_background_zebra;
+		}
+	}
+}

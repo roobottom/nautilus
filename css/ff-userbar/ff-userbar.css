@@ -1,0 +1,302 @@
+/* Firely 5 ff-userbar styles */
+/* Version 1.1 — November 2013 */
+/*
+
+Changelog:
+
+v1.1 — November 2013.
+* addding further styles for mobile sizes
+
+v1.0 — October 2013. 
+* Inital styles for usergroup
+
+*/
+.ff-userbar {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 1em;
+}
+.ff-userbar {
+  background-color: #333333;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000;
+  *zoom: 1;
+}
+.ff-userbar:before,
+.ff-userbar:after {
+  content: " ";
+  display: table;
+}
+.ff-userbar:after {
+  clear: both;
+}
+.ff-userbar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  padding: 0.875rem;
+}
+.ff-userbar ul,
+.ff-userbar li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ff-userbar .ff-ub-dashboards > a:before,
+.ff-userbar .ff-ub-dashboard > a:before,
+.ff-userbar .ff-ub-manage-set-tasks > a:before,
+.ff-userbar .ff-ub-your-tasks > a:before,
+.ff-userbar .ff-ub-bookmarks > a:before,
+.ff-userbar .ff-ub-has-children > a:before,
+.ff-userbar .ff-ub-title:before,
+.ff-userbar .ff-ub-dashboards > a:after,
+.ff-userbar .ff-ub-dashboard > a:after,
+.ff-userbar .ff-ub-manage-set-tasks > a:after,
+.ff-userbar .ff-ub-your-tasks > a:after,
+.ff-userbar .ff-ub-bookmarks > a:after,
+.ff-userbar .ff-ub-has-children > a:after,
+.ff-userbar .ff-ub-title:after {
+  font-family: 'userbar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  top: 2px;
+  top: 0.125rem;
+  margin-right: 6px;
+  margin-right: 0.375rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ff-userbar .ff-ub-level-0 > .ff-ub-dashboards > a:before,
+.ff-userbar .ff-ub-level-0 > .ff-ub-dashboard > a:before {
+  content: "\e601";
+}
+.ff-userbar .ff-ub-manage-set-tasks > a:before {
+  content: "\e602";
+}
+.ff-userbar .ff-ub-your-tasks > a:before {
+  content: "\e600";
+}
+.ff-userbar .ff-ub-bookmarks > a:before {
+  content: "\e603";
+}
+.ff-userbar .ff-ub-has-children > a:after {
+  content: "\e604";
+  text-align: right;
+  margin-left: 6px;
+  margin-left: 0.375rem;
+  margin-right: 0;
+}
+.ff-userbar .ff-ub-title:before {
+  content: "\e605";
+}
+.ff-userbar .ff-ub-username {
+  position: relative;
+}
+.ff-userbar .ff-ub-username > a {
+  padding-left: 50px;
+  padding-left: 3.125rem;
+}
+.ff-userbar .ff-ub-username img {
+  display: block;
+  position: absolute;
+  width: 32px;
+  width: 2rem;
+  left: 10px;
+  left: 0.625rem;
+  top: 6px;
+  top: 0.375rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.ff-userbar .ff-ub-has-children {
+  position: relative;
+}
+.ff-userbar .ff-ub-has-children > ul {
+  position: absolute;
+  display: none;
+  background: white;
+  width: 100%;
+  z-index: 1000;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+}
+.ff-userbar .ff-ub-has-children > ul a {
+  color: black;
+  text-shadow: none;
+  border-top: 1px solid #E3E3E3;
+}
+.ff-userbar .ff-ub-has-children > ul a:hover {
+  background-color: #F1F1F1;
+}
+.ff-userbar .ff-ub-level-0 > li {
+  float: left;
+}
+.ff-userbar .ff-ub-has-children.ff-ub-show-children > a {
+  background: white;
+  color: black;
+  text-shadow: none;
+}
+.ff-userbar .ff-ub-has-children.ff-ub-show-children > ul {
+  display: block;
+}
+/* small mobile */
+@media screen and (max-width: 36.25em) {
+  .ff-userbar .ff-ub-title {
+    display: none;
+  }
+  .ff-userbar .ff-ub-level-0 {
+    *zoom: 1;
+  }
+  .ff-userbar .ff-ub-level-0:before,
+  .ff-userbar .ff-ub-level-0:after {
+    content: " ";
+    display: table;
+  }
+  .ff-userbar .ff-ub-level-0:after {
+    clear: both;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username {
+    text-align: center;
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-username {
+    clear: left;
+    width: 100%;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-username > a {
+    background-color: #2b2b2b;
+  }
+}
+/* mobile */
+@media screen and (min-width: 36.25em) and (max-width: 48.75em) {
+  .ff-userbar .ff-ub-title {
+    display: none;
+  }
+  .ff-userbar .ff-ub-level-0 {
+    *zoom: 1;
+  }
+  .ff-userbar .ff-ub-level-0:before,
+  .ff-userbar .ff-ub-level-0:after {
+    content: " ";
+    display: table;
+  }
+  .ff-userbar .ff-ub-level-0:after {
+    clear: both;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username {
+    text-align: center;
+    float: left;
+    width: 20%;
+    position: relative;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards > a,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks > a,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks > a,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks > a,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username > a {
+    padding: 7px;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards > a:before,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks > a:before,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks > a:before,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks > a:before,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username > a:before {
+    display: block;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+    margin-bottom: 0.1875rem;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards > a:after,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks > a:after,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks > a:after,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks > a:after,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username > a:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    margin-top: -0.4375em;
+    right: 10px;
+    right: 0.625rem;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards img,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks img,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks img,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks img,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username img {
+    position: relative;
+    width: 24px;
+    width: 1.5rem;
+    left: 50%;
+    margin-left: -12px;
+    margin-left: -0.75em;
+    top: 0;
+  }
+  .ff-userbar .ff-ub-level-0 .ff-ub-dashboards .ff-ub-username-text,
+  .ff-userbar .ff-ub-level-0 .ff-ub-manage-set-tasks .ff-ub-username-text,
+  .ff-userbar .ff-ub-level-0 .ff-ub-your-tasks .ff-ub-username-text,
+  .ff-userbar .ff-ub-level-0 .ff-ub-bookmarks .ff-ub-username-text,
+  .ff-userbar .ff-ub-level-0 .ff-ub-username .ff-ub-username-text {
+    top: 3px;
+    top: 0.1875rem;
+    position: relative;
+  }
+}
+/* tablet */
+@media screen and (min-width: 48.75em) and (max-width: 56.25em) {
+  .ff-userbar .ff-ub-title {
+    display: none;
+  }
+}
+/* desktop */
+@media screen and (min-width: 56.25em) {
+  .ff-userbar {
+    padding: 0 7px;
+    padding: 0 0.4375rem;
+  }
+  .ff-userbar .ff-ub-wrapper {
+    max-width: 87.5em;
+    margin: 0 auto;
+    position: relative;
+  }
+  .ff-userbar .ff-ub-title {
+    float: left;
+    padding: 14px;
+    padding: 0.875rem;
+  }
+  .ff-userbar .ff-ub-nav {
+    float: right;
+  }
+  .ff-userbar .ff-ub-title span {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'userbar';
+  src: url('userbar.eot');
+  src: url('userbar.eot?#iefix') format('embedded-opentype'), url('userbar.ttf') format('truetype'), url('userbar.woff') format('woff'), url('userbar.svg#userbar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

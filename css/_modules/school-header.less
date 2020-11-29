@@ -1,0 +1,101 @@
+#school-header {
+	margin: 20px 0; margin: 20rem/@base 0;
+	.clearfix();
+	a[rel=home] {
+		text-decoration: none;
+		.school-name {
+			.font-bold();
+			color: #FFF;
+			font-size: 32px; font-size: 32rem/@base;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.20);
+			line-height: 1;
+		}
+		.school-motto {
+			.font-bold-italic();
+			color: #FFF;
+			font-size: 20px; font-size: 20rem/@base;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.20);
+			line-height: 1;
+		}
+	}
+}
+#serach {
+	position: relative;
+	input {
+		border: none;
+		padding: 14px 14px 14px 36px; padding: 14rem/@base 14rem/@base 14rem/@base 36rem/@base;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		display: block;
+		
+		
+	}
+	
+	#icon > .search();
+	&:before {
+		position: absolute;
+		color: @c_grey;
+		top: 16px; top:16rem/@base;
+		left: 12px; left: 12rem/@base;
+	}
+	
+}
+
+#school-header {.default() {
+	#school-header {
+		
+		a[rel=home] {
+			float: left;
+			min-height: unit(@logo_height,px); min-width: unit(@logo_height/@base,rem);
+			padding-left: unit(@logo_width+20,px); padding-left: unit((@logo_width+20)/@base,rem);
+			background: url(@logo_url) top left no-repeat;
+			
+			.school-name {
+				padding-top: unit((@logo_height/2)-(52/2), px);
+			}
+			
+		}
+		#serach {
+			float: right;
+			margin-top: unit((@logo_height/2)-(52/2), px);
+			input{width: 400px;}
+		}
+	}
+}}
+
+.superwide() {
+	#school-header > .default();
+}
+.widescreen() {
+	#school-header > .default();
+}
+.desktop() {
+	#school-header > .default();
+}
+.tablet() {
+	#school-header {
+		
+		
+		
+		a[rel=home] {
+			//text-align: center;
+			min-height: unit(@logo_height,px); min-width: unit(@logo_height/@base,rem);
+			padding-left: unit(@logo_width+20,px); padding-left: unit((@logo_width+20)/@base,rem);
+			background: url(@logo_url) top left no-repeat;
+			display: block;
+			margin:0 25%;
+			margin-bottom: 10px; margin-bottom: 10rem/@base;
+			.school-name {
+				padding-top: unit((@logo_height/2)-(52/2), px);
+			}
+		}//a
+		
+		#serach  {
+			display: none;
+		}
+	}
+}
+.mobile() {
+
+}

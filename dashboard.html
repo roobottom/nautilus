@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- tell IE to use the latest rendering engine possible, disable for development -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        
+        <!-- page meta -->
+        <title>Blue 2014</title>
+        <meta name="description" content=""/>
+        
+        <!-- mobile viewport, doen't prevent user resizing — a good thing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!-- load stylesheets here -->
+		<link rel="stylesheet" href="css/ff-userbar/ff-userbar.css"/>
+        <link rel="stylesheet" href="css/template.css"/>
+        <link rel="stylesheet" href="dashboard/dashboard.css"/>
+        <link rel="stylesheet" href="widgets/widgets.css"/>
+        
+        <!-- load ONLY modernizr here as it need to load asap -->
+        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+    <body class="layout-dashboard">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="ff-userbar"><div class="ff-ub-wrapper">
+        	<div class="ff-ub-title"><span>Firefly</span></div>
+        	<nav class="ff-ub-nav">
+        		
+        		<ul class="ff-ub-level-0">
+        			<li class="ff-ub-dashboards ff-ub-has-children -ff-ub-show-children"><a href="#">Dashboards</a>
+        				<ul class="ff-ub-level-1">
+        					<li class="ff-ub-dashboardName"><a href="#">Dashboard Name</a></li>
+        					<li class="ff-ub-dashboardName1"><a href="#">Dashboard Name 1</a></li>
+        				</ul>
+        			</li>
+        			<li class="ff-ub-manage-set-tasks"><a href="#">Manage Set Tasks</a></li>
+        			<li class="ff-ub-your-tasks"><a href="#">Your Tasks</a></li>
+        			<li class="ff-ub-bookmarks"><a href="#">Bookmarks</a></li>
+        			<li class="ff-ub-username ff-ub-has-children -ff-ub-show-children">
+        				<a href="#ff-ub-userlinks-more" class="ff-ub-icon-down">
+							<img src="css/ff-userbar/dummy-user.jpg"/>
+							<span class="ff-ub-username-text">Jon Roobottom</span>
+						</a>
+						<ul class="ff-ub-level-1">
+							<li class="ff-ub-accountSettings"><a href="#">Account Settings</a></li>
+        					<li class="ff-ub-browseProfiles"><a href="#">Browse Profiles</a></li>
+        					<li class="ff-ub-yourProfile"><a href="#">Your Profile</a></li>
+        					<li class="ff-ub-marksAndFeedback"><a href="#">Marks and Feedback</a></li>
+        					<li class="ff-ub-messages"><a href="#">Messages</a></li>
+        					<li class="ff-ub-updates"><a href="#">Updates</a></li>
+        					<li class="ff-ub-viewSiteAs"><a href="#">View Site As...</a></li>
+						</ul>
+        			</li>
+        		</ul>
+        		
+        	</nav>
+       </div> </div><!--/ff-userbar-->
+        
+        <div class="wrapper">
+        
+	        <header id="school-header">
+	        	<a href="#" rel="home">
+	        		<div class="school-name">St School Name</div>
+	        		<div class="school-motto">Aliqua res optime restabant ultima</div>
+	        	</a>
+	        	<form id="serach">
+	        		<input type="search" placeholder="Type & press return to search"/>
+	        	</form>
+	        </header>
+			
+			
+			<section id="the-page">
+				<header id="section-header">
+					<div class="section-title">Welcome, Sally Jameson</div>
+				</header>
+				<nav id="section-menu">
+					<!-- start of Firefly section menu include -->
+					<div class="ff-nav-sections" data-ff-nav="sections" data-ff-editable="yes">
+						<ul class="ff-nav-level-0">
+								<li class="ff-nav-haschildren -ff-nav-children-shown">
+									<a href="#">Browse Site</a>
+									<ul class="ff-nav-level-1" id="sections">
+										<li data-ff-id="0" class="ff-nav-home"><a href="#">Home</a></li>
+										<li class="ff-nav-has-children ff-nav-children-shown"><a href="#">Toplevel</a><ul id="section-id-5" class="ff-nav-level-2">
+											<li data-ff-id="6" class=""><a href="#">Subsection</a></li>
+											<li data-ff-id="10" class=""><a href="#">Physics</a></li>
+											<li data-ff-id="12" class=""><a href="#">test2</a></li>
+										</ul>
+									</li>
+									<li class="ff-nav-has-children">
+										<a href="#">Personal Sections</a>
+										<ul id="section-id-7" class="ff-nav-level-2">
+											<li data-ff-id="8" class=""><a href="#">Administrator</a></li>
+										</ul>
+									</li>
+									<li class="ff-nav-child-selected ff-nav-has-children">
+										<a href="#">test</a>
+										<ul id="section-id-11" class="ff-nav-level-2">
+											<li data-ff-id="13" class="ff-nav-selected "><a href="#">Blank page</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- end section menu -->
+				</nav>
+				
+				<nav id="breadcrumb">
+						<ul class="ff-nav-breadcrumb">
+				        <li class="ff-nav-home">Dashboard</li>
+				      </ul>
+					</nav>
+				
+				<main id="main">
+				
+					
+					
+					<section class="dashboard-content">
+						
+						<!-- ff-announcements-and-messages -->
+						
+						<div class="ff-dashboard-item ff-dashboard-announcements" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<button class="ff-button ff-button-main-action ff-icon-send"><span>Send Message</span></button>
+								<h2>Announcements &amp; Messages</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ol class="ff-messages">
+									<li class="ff-message-notice ff-message-important">
+										<div class="ff-message-actions">
+											<button class="ff-button ff-button-message-action ff-button-archive ff-icon-close" title="Archive this message"><span>Archive this message</span></button>
+										</div>
+										<div class="ff-message-content">
+											<p>Dear Hockey first team, please remember to bring your kit for training this Tuesday evening. This is an example of an extremely long message to see what happens with the close button at different screen sizes.</p>
+										</div>
+										<div class="ff-message-meta">
+											<p>Posted by <strong><a href="#">Jane Fromersham</a></strong> to <strong>You</strong>, <time title="Wednesday 26th October 2013 at 11:56am" datetime="10-26-13 11:56">around lunchtime yesterday</time></p>
+										</div>
+									</li>
+									
+									<li class="ff-message-notice">
+										<div class="ff-message-actions">
+											<button class="ff-button ff-button-message-action ff-button-archive ff-icon-close" title="Archive this message"><span>Archive this message</span></button>
+										</div>
+										<div class="ff-message-content">
+											<p>Dear Hockey first team, please remember to bring your kit for training this Tuesday evening. This is an example of an extremely long message to see what happens with the close button at different screen sizes.</p>
+										</div>
+										<div class="ff-message-meta">
+											<p>Posted by <strong><a href="#">Jane Fromersham</a></strong> to <strong>You</strong>, <time title="Wednesday 26th October 2013 at 11:56am" datetime="10-26-13 11:56">around lunchtime yesterday</time></p>
+										</div>
+									</li>
+									
+								</ol>
+							</div>
+							<div class="ff-dashbord-item-meta">
+								<a href="#" class="ff-messages-more">View all Announcements &amp; Messages</a>
+							</div>
+						</div>
+						
+						<!-- END: ff-announcements-and-messages -->
+						
+						
+						<!-- Your tasks -->
+						
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<button class="ff-button ff-button-main-action ff-button-add-task ff-icon-add"><span>Add a personal task</span></button>
+								<h2>Your Tasks</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ol class="ff-messages">
+									<li class="ff-message-notice ff-task-personal ff-color-pink">
+										<div class="ff-message-actions">
+											<button class="ff-button ff-button-message-action ff-icon-done"><span>Mark as done</span></button>
+											<button class="ff-button ff-button-message-action ff-has-children ff-button-colour ff-show-children"><span>Change Colour</span>
+											
+											<ul class="ff-labels-color ff-children">
+												<li class="ff-label-color ff-label-color-grey"><a href="#">Grey</a></li>
+												<li class="ff-label-color ff-label-color-red"><a href="#">Red</a></li>
+												<li class="ff-label-color ff-label-color-blue ff-selected"><a href="#">Blue</a></li>
+												<li class="ff-label-color ff-label-color-yellow"><a href="#">Yellow</a></li>
+												<li class="ff-label-color ff-label-color-green"><a href="#">Green</a></li>
+												<li class="ff-label-color ff-label-color-orange"><a href="#">Orange</a></li>
+												<li class="ff-label-color ff-label-color-pink"><a href="#">Pink</a></li>
+												<li class="ff-label-color ff-label-color-purple"><a href="#">Purple</a></li>
+												<li class="ff-label-color ff-label-color-empty"><a href="#">None</a></li>
+											</ul>
+											
+											</button>
+										</div>
+										<div class="ff-message-content">
+											<p>Exam prep for English this Friday. Remember to bring books and the assignment sheets provided last week.</p>
+										</div>
+										<div class="ff-message-meta">
+											<p>
+											<span class="ff-label ff-label-notice">Personal Task</span>
+											<span class="ff-label ff-label-new">Just Added</span>
+											<span class="ff-label ff-label-warning">Overdue</span>
+											Added <time datetime="08-28-14 09:21" title="Monday, 28th October 2014 at 9:21am">Monday this week, in the morning</time></p>
+										</div>
+									</li>
+									<li class="ff-message-notice ff-task-online ff-color-blue">
+										<div class="ff-message-actions">
+											<button class="ff-button ff-button-message-action ff-icon-submit"><span>Submit work</span></button>
+										</div>
+										<div class="ff-message-content">
+											<p>Exam prep for English this Friday. Remember to bring books and the assignment sheets provided last week.</p>
+										</div>
+										<div class="ff-message-meta">
+											<p>Set <time datetime="08-28-14 09:21" title="Monday, 28th October 2014 at 9:21am">Monday this week, in the morning</time></p>
+										</div>
+									</li>
+								</ol>
+							</div>
+							<div class="ff-dashboard-item-meta">
+								<a href="#" class="ff-tasks-more">View all 7 tasks</a>
+							</div>
+						</div>
+						
+						<!-- END: Your tasks-->
+						
+						<!-- Your manage set tasks -->
+						
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<button class="ff-button ff-button-main-action ff-button-add-task ff-icon-add"><span>Set a new task</span></button>
+								<h2>Manage set tasks</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ol class="ff-messages">
+									<li class="ff-message-notice ff-task">
+										
+										<div class="ff-message-content">
+											<p><a href="#">Write a 100,000 word essay on why the headmaster is so weird. Bonus marks will be give for use of pictures of him at the Christmas party.</a></p>
+										</div>
+										<div class="ff-message-meta">
+											<p>Due <time datetime="08-28-14 09:21" title="Monday, 28th October 2014 at 9:21am">Tomorrow morning</time></p>
+										</div>
+										<div class="ff-progress">
+											<p>Progress</p>
+											<div class="ff-progress-bar">
+												<span style="width:50%" class="ff-progress-completed"></span>
+												<span style="width:50%" class="ff-progress-marked"></span>
+											</div>
+											<p>1 Marked, 1 Handed in, 2 Total</p>
+										</div>
+									</li>
+						
+						
+						<!-- posts, comments, edits -->
+						
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<h2>Posts, Comments &amp; Edits</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ol class="ff-messages">
+									<li class="ff-message-notice">
+										<div class="ff-message-image">
+											<img src="dashboard/users/esther.jpg" title="Esther Cotton" alt="Esther Cotton" class="ff-image"/>
+										</div>
+										<div class="ff-message-content">
+											<p><a href="#">Good point Sally, but don't forget the macroeconomic effect this proposal would have.</a></p>
+										</div>
+										<div class="ff-message-meta">
+											<p>Posted by <a href="#">Esther Cotton</a> in <a href="#">Economics</a> on <time datetime="08-28-14 09:21" title="Monday, 28th October 2014 at 9:21am">Monday this week, in the morning</time></p>
+										</div>
+									</li>
+									
+								</ol>
+							</div>
+							<div class="ff-dashboard-item-meta">
+								<a href="#" class="ff-comments-more">View all Posts, Comments &amp; Edits</a>
+							</div>
+						</div>
+						
+						<!-- END: posts, comments, edits -->
+						
+						<!-- START: Timetable -->
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<h2>Timetable</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<div class="ff-timetable ff-timetable-fiveday" data-ff-timetable-daylength="390">
+									<div class="ff-timetable-index">
+										<div class="ff-timetable-title">Period</div>
+										<ol class="ff-timetable-blocks">
+											<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60"><span class="ff-timetable-label">09:00 - 10:00</span></li>
+											<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120"><span class="ff-timetable-label">10:00 - 11:00</span></li>
+											<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"><span class="ff-timetable-label">11:00 - 11:25</span></li>
+											<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205"><span class="ff-timetable-label">11:25 - 12:25</span></li>
+											<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270"><span class="ff-timetable-label">12:25 - 13:30</span></li>
+											<li class="ff-timetable-block" data-ff-timetable-starttime="270" data-ff-timetable-endtime="330"><span class="ff-timetable-label">13:30 - 14:30</span></li>
+											<li class="ff-timetable-block" data-ff-timetable-starttime="330" data-ff-timetable-endtime="390"><span class="ff-timetable-label">14:30 - 15:30</span></li>
+										</ol>
+									</div>
+									<div class="ff-timetable-days"><div class="ff-timetable-dayswrapper">
+										<div class="ff-timetable-day">
+											<div class="ff-timetable-title">Monday</div>
+											<ol class="ff-timetable-blocks">
+												<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60" title="09:00 - 10:00: Maths with Dr Smith in E4/1">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Maths</span>
+														<span class="ff-timetable-event-tutor">Dr Smith</span>
+														<span class="ff-timetable-event-room">E4/1</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120" title="10:00 - 11:00: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"  title="11:00 - 11:25: Break"> 
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205" title="11:25 - 12:25: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270" title="12:25 - 13:30: Break">
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block ff-timetable-double" data-ff-timetable-starttime="270" data-ff-timetable-endtime="390" title="13:30 - 15:30: Physics with Sarah Yell in Lab 2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Physics</span>
+														<span class="ff-timetable-event-tutor">Sarah Yell</span>
+														<span class="ff-timetable-event-room">Lab 2</span>
+													</a>
+												</li>
+											</ol>
+										</div><!--/day-->
+										<div class="ff-timetable-day">
+											<div class="ff-timetable-title">Tuesday</div>
+											<ol class="ff-timetable-blocks">
+												<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60" title="09:00 - 10:00: Maths with Dr Smith in E4/1">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Maths</span>
+														<span class="ff-timetable-event-tutor">Dr Smith</span>
+														<span class="ff-timetable-event-room">E4/1</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120" title="10:00 - 11:00: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"  title="11:00 - 11:25: Break"> 
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205" title="11:25 - 12:25: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270" title="12:25 - 13:30: Break">
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="270" data-ff-timetable-endtime="390" title="13:30 - 15:30: Physics with Sarah Yell in Lab 2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Physics</span>
+														<span class="ff-timetable-event-tutor">Sarah Yell</span>
+														<span class="ff-timetable-event-room">Lab 2</span>
+													</a>
+												</li>
+											</ol>
+										</div><!--/day-->
+										<div class="ff-timetable-day">
+											<div class="ff-timetable-title">Wednesday</div>
+											<ol class="ff-timetable-blocks">
+												<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60" title="09:00 - 10:00: Maths with Dr Smith in E4/1">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Maths</span>
+														<span class="ff-timetable-event-tutor">Dr Smith</span>
+														<span class="ff-timetable-event-room">E4/1</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120" title="10:00 - 11:00: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"  title="11:00 - 11:25: Break"> 
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205" title="11:25 - 12:25: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270" title="12:25 - 13:30: Break">
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="270" data-ff-timetable-endtime="390" title="13:30 - 15:30: Physics with Sarah Yell in Lab 2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Physics</span>
+														<span class="ff-timetable-event-tutor">Sarah Yell</span>
+														<span class="ff-timetable-event-room">Lab 2</span>
+													</a>
+												</li>
+											</ol>
+										</div><!--/day-->
+										<div class="ff-timetable-day">
+											<div class="ff-timetable-title">Thursday</div>
+											<ol class="ff-timetable-blocks">
+												<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60" title="09:00 - 10:00: Maths with Dr Smith in E4/1">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Maths</span>
+														<span class="ff-timetable-event-tutor">Dr Smith</span>
+														<span class="ff-timetable-event-room">E4/1</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120" title="10:00 - 11:00: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"  title="11:00 - 11:25: Break"> 
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205" title="11:25 - 12:25: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270" title="12:25 - 13:30: Break">
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="270" data-ff-timetable-endtime="390" title="13:30 - 15:30: Physics with Sarah Yell in Lab 2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Physics</span>
+														<span class="ff-timetable-event-tutor">Sarah Yell</span>
+														<span class="ff-timetable-event-room">Lab 2</span>
+													</a>
+												</li>
+											</ol>
+										</div><!--/day-->
+										<div class="ff-timetable-day">
+											<div class="ff-timetable-title">Friday</div>
+											<ol class="ff-timetable-blocks">
+												<li class="ff-timetable-block" data-ff-timetable-starttime="0" data-ff-timetable-endtime="60" title="09:00 - 10:00: Maths with Dr Smith in E4/1">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Maths</span>
+														<span class="ff-timetable-event-tutor">Dr Smith</span>
+														<span class="ff-timetable-event-room">E4/1</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="60" data-ff-timetable-endtime="120" title="10:00 - 11:00: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="120" data-ff-timetable-endtime="145"  title="11:00 - 11:25: Break"> 
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="145" data-ff-timetable-endtime="205" title="11:25 - 12:25: English with Simon Reynolds in E3/2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">English</span>
+														<span class="ff-timetable-event-tutor">Simon Reynolds</span>
+														<span class="ff-timetable-event-room">E3/2</span>
+													</a>
+												</li>
+												<li class="ff-timetable-block ff-timetable-break" data-ff-timetable-starttime="205" data-ff-timetable-endtime="270" title="12:25 - 13:30: Break">
+													<span class="ff-timetable-label"></span>
+												</li>
+												<li class="ff-timetable-block" data-ff-timetable-starttime="270" data-ff-timetable-endtime="390" title="13:30 - 15:30: Physics with Sarah Yell in Lab 2">
+													<a class="ff-timetable-event" href="#">
+														<span class="ff-timetable-event-title">Physics</span>
+														<span class="ff-timetable-event-tutor">Sarah Yell</span>
+														<span class="ff-timetable-event-room">Lab 2</span>
+													</a>
+												</li>
+											</ol>
+										</div><!--/day-->
+									</div></div><!--/wrapper /days-->
+								</div><!--/timetable-->
+							</div><!--/dashboard-item-content-->
+						</div><!--/dashboard-item-->	
+						<!-- END: Timetable -->
+						
+					</section>
+				</main>
+				<aside id="aside">
+					<section class="dashboard-content">
+						
+						<!-- Browse Profiles -->
+						
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<h2>Browse Profiles</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ul class="ff-list ff-level-0 ff-list-of-profiles">
+									<li class="ff-list-item">
+										<div class="ff-list-heading">
+										<h3>Your teachers</h3>
+										</div>
+										<ul class="ff-list ff-level-1">
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/matt.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Matt de Witt</a></p>
+												</div>
+											</li>
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/sarah.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Sarah Mason</a></p>
+												</div>
+											</li>
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/tim.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Tim Firdiland</a></p>
+												</div>
+											</li>
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/thomas.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Thomas Wintersides</a></p>
+												</div>
+											</li>
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/jeanette.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Jeanette Smith</a></p>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="ff-list-item">
+										<div class="ff-list-heading">
+										<h3>Your Tutors</h3>
+										</div>
+										<ul class="ff-list ff-level-1">
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/jane.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Jane Froersham</a></p>
+												</div>
+											</li>
+											<li class="ff-list-item ff-profile">
+												<div class="ff-profile-image">
+													<a href="#"><img src="dashboard/users/esther.jpg" class="ff-image"/></a>
+												</div>
+												<div class="ff-profile-content">
+													<p><a href="#">Esther Cotton</a></p>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+						
+						<!-- END: Browse Profiles -->
+						
+						<!-- bookmarks -->
+						
+						<div class="ff-dashboard-item" id="should-these-have-an-id?">
+							<div class="ff-dashbord-item-title">
+								<h2>Bookmarks</h2>
+							</div>
+							<div class="ff-dashboard-item-content">
+								<ul class="ff-list ff-level-0 ff-list-of-bookmarks">
+									<li class="ff-list-item">
+										<div class="ff-list-heading">
+											<h3>Newest Recommened</h3>
+										</div>
+										<ul class="ff-list ff-level-1">
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Volcano structure &amp; formation</a>
+											</li>
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Plate techtonics</a>
+											</li>
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Calculating distance using red-shifted light</a>
+											</li>
+										</ul>
+									</li>
+									<li class="ff-list-item">
+										<div class="ff-list-heading">
+											<h3>Personal Bookmarks</h3>
+										</div>
+										<ul class="ff-list ff-level-1">
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Volcano structure &amp; formation</a>
+											</li>
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Plate techtonics</a>
+											</li>
+											<li class="ff-list-item ff-bookmark">
+												<a href="#">Calculating distance using red-shifted light</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- END: bookmarks -->
+						
+					</section>
+				</aside>
+				
+				<aside id="page-meta">
+						<!-- ff-template start-->
+						<div class="ff-page-meta">
+							<ul>
+								<li class="ff-page-meta-last-updated-by">Last updated by <a href="#">Peter Teacher</a></li>
+								<li class="ff-page-meta-last-updated-on">Last updated yesterday</li>
+								<li class="ff-page-meta-page-information"><a href="#">View Page Information</a></li>
+								<li class="ff-page-meta-check-visits-by-person"><a href="#">Check visits by person</a></li>
+							</ul>
+						</div>
+						<!-- ff-template end -->
+					</aside>
+				
+			</section>
+			
+			<footer id="footer">
+				<p class="powered-by">Powered by Firefly 5</p>
+			</footer>
+		
+        </div>
+        
+	<!-- load temp jquery here. -->
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="css/ff-userbar/ff-userbar.js"></script>
+    <script src="widgets/timetable.js"></script>
+    </body>
+</html>
